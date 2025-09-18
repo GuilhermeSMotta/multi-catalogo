@@ -1,0 +1,52 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #34495e;
+  font-size: 1.4rem;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+  color: #7f8c8d;
+  flex-grow: 1;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card button {
+  background-color: #28a745;
+  color: white;
+}
+
+.card button.is-favorite {
+  background-color: #dc3545;
+}
+
+.card button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}

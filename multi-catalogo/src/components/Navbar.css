@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+nav a {
+  color: #555;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+nav a:hover:not(.active) {
+  background-color: #e9ecef;
+  color: #333;
+}
